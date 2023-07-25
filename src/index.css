@@ -11,7 +11,9 @@ body {
   font-family: sans-serif;
 }
 .app {
+  position: relative;
   padding: 20px;
+  overflow-x: hidden;
   /* text-align: center; */
 }
 .header {
@@ -22,4 +24,103 @@ body {
 .header span {
   font-size: 3.5rem;
   color: brown;
+}
+.container {
+  padding: 5px;
+}
+.container .resume-header {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 20px 0;
+}
+.form {
+  padding: 5px;
+  width: 80%;
+  margin: 20px auto;
+}
+.form input {
+  display: block;
+  width: 50%;
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 15px 5px 10px 5px;
+  font-size: 0.9rem;
+  outline: none;
+  border: 1px solid brown;
+  border-radius: 5px;
+}
+.form textarea {
+  display: block;
+  width: 60%;
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 15px 5px 5px 5px;
+  font-size: 0.9rem;
+  outline: none;
+  border: 1px solid brown;
+  border-radius: 5px;
+}
+.form label {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+}
+.form button {
+  display: block;
+  width: 90px;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 20px auto;
+  background-color: brown;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+.form .card {
+  padding: 5px;
+  border: 1px solid brown;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.card h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.card h2::after {
+  display: block;
+  content: "";
+  width: 5%;
+  /* height: 10%; */
+  border: 2px solid brown;
+  margin: 5px auto;
+}
+.resume {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.resume .preview {
+  background-color: white;
+  margin: 1px auto;
+  width: 90%;
+  margin: 10px auto;
+  padding: 20px;
+}
+.preview .close {
+  text-align: right;
+}
+.close-text {
+  display: inline-block;
+  cursor: pointer;
+  color: brown;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.preview-header {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 0.95rem;
 }

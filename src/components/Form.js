@@ -157,7 +157,13 @@ function Form() {
             );
           })}
         </div>
-        <button type="submit">submit</button>
+        <div className="card">
+          <label className="label" htmlFor="title">
+            title
+          </label>
+          <input />
+        </div>
+        <button type="submit">preview</button>
       </form>
     </div>
   );
