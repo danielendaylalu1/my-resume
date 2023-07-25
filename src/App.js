@@ -9,7 +9,7 @@ function App() {
       </h1>
       <div className="main">
         <Form />
-        <Resume />
+        {/* <Resume /> */}
       </div>
     </div>
   );

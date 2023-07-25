@@ -124,3 +124,72 @@ body {
   margin: 20px 0;
   font-size: 0.95rem;
 }
+.preview-main {
+  margin: 10px 0;
+}
+.personal {
+  text-align: center;
+  padding: 10px 0;
+}
+.personal .name {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.name::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 3px;
+  margin: 4px auto;
+  background-color: brown;
+}
+.personal .acadamy {
+  font-size: 1.2rem;
+}
+
+.side {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+.side h2 {
+  margin: 20px 0;
+  font-size: 1.4rem;
+  color: brown;
+}
+.side p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+.side ul {
+  list-style: none;
+}
+.side ul li {
+  margin: 10px 0 5px 0;
+}
+/* .hr {
+  width: 3px;
+  background-color: black;
+} */
+.side1 {
+  padding: 10px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.side2 {
+  width: 65%;
+  padding: 10px 5px;
+}
+.side1 {
+  width: 300px;
+}
+.side2 .summery p {
+  width: 90%;
+}
+.education {
+  margin-top: 40px;
+}
