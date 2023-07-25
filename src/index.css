@@ -12,16 +12,14 @@ body {
 }
 .app {
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
 }
 .header {
   font-size: 2.2rem;
   color: brown;
+  text-align: center;
 }
 .header span {
   font-size: 3.5rem;
   color: brown;
-}
-.main {
-  display: flex;
 }
