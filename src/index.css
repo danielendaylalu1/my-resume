@@ -14,7 +14,6 @@ body {
   position: relative;
   padding: 20px;
   overflow-x: hidden;
-  /* text-align: center; */
 }
 .header {
   font-size: 2.2rem;
@@ -27,6 +26,7 @@ body {
 }
 .container {
   padding: 5px;
+  position: relative;
 }
 .container .resume-header {
   color: rgba(0, 0, 0, 0.5);
@@ -44,7 +44,7 @@ body {
   max-width: 90%;
   margin: 10px auto;
   padding: 15px 5px 10px 5px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   outline: none;
   border: 1px solid brown;
   border-radius: 5px;
@@ -67,7 +67,7 @@ body {
 }
 .form button {
   display: block;
-  width: 90px;
+  min-width: 90px;
   cursor: pointer;
   padding: 10px 15px;
   margin: 20px auto;
@@ -90,24 +90,18 @@ body {
   display: block;
   content: "";
   width: 5%;
-  /* height: 10%; */
+
   border: 2px solid brown;
   margin: 5px auto;
 }
-.resume {
-  position: absolute;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  top: 0;
-  left: 0;
-}
+
 .resume .preview {
+  display: block;
   background-color: white;
-  margin: 1px auto;
   width: 90%;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 20px;
+  border: 1px solid brown;
 }
 .preview .close {
   text-align: right;
@@ -149,7 +143,7 @@ body {
 
 .side {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 30px;
@@ -169,10 +163,7 @@ body {
 .side ul li {
   margin: 10px 0 5px 0;
 }
-/* .hr {
-  width: 3px;
-  background-color: black;
-} */
+
 .side1 {
   padding: 10px 5px;
   display: flex;
@@ -181,7 +172,8 @@ body {
   gap: 20px;
 }
 .side2 {
-  width: 65%;
+  width: 55%;
+  min-width: 280px;
   padding: 10px 5px;
 }
 .side1 {
@@ -192,4 +184,7 @@ body {
 }
 .education {
   margin-top: 40px;
+}
+.hide {
+  display: none;
 }
