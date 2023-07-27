@@ -8,10 +8,17 @@ const initialState = {
     email: "",
     address: "",
   },
-  achievement: [],
+  achievement: {
+    ach: [],
+    year: [],
+  },
   skills: [],
   summery: "",
-  education: [],
+  education: {
+    edu: [],
+    syear: [],
+    eyear: [],
+  },
 };
 
 const resumeSlice = createSlice({

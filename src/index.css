@@ -49,26 +49,9 @@ body {
   border: 1px solid brown;
   border-radius: 5px;
 }
-.edu-card input,
-label {
-  margin: 5px auto !important;
-}
-.year {
-  display: flex;
-  justify-content: center;
-}
-.year input[type="date"] {
-  /* display: block; */
-  width: 20% !important;
-  padding: 5px !important;
-  cursor: pointer;
-}
-.year label {
-  font-size: 0.8rem;
-}
 .form input[type="date"] {
   display: block;
-  width: 10%;
+  width: 50%;
 }
 .form textarea {
   display: block;
@@ -103,6 +86,24 @@ label {
   margin: 10px 0;
   border-radius: 5px;
 }
+.edu-card input,
+label {
+  margin: 5px auto !important;
+}
+.year {
+  display: flex;
+  justify-content: center;
+}
+.year input[type="date"] {
+  /* display: block; */
+  width: 100% !important;
+  padding: 5px !important;
+  cursor: pointer;
+}
+.year label {
+  font-size: 0.8rem;
+}
+
 .card h2 {
   text-align: center;
   margin: 20px 0;
@@ -186,6 +187,7 @@ label {
 }
 
 .side1 {
+  width: 300px;
   padding: 10px 5px;
   display: flex;
   flex-wrap: wrap;
@@ -193,18 +195,25 @@ label {
   gap: 20px;
 }
 .side2 {
-  width: 55%;
+  width: 65%;
   min-width: 280px;
   padding: 10px 5px;
 }
-.side1 {
-  width: 300px;
-}
+
 .side2 .summery p {
-  width: 90%;
+  width: 100%;
+}
+.personal,
+.achievement,
+.skills {
+  padding: 5px 100px 5px 0px;
 }
 .education {
   margin-top: 40px;
+}
+.education span {
+  margin: 1px 10px;
+  font-size: 0.8rem;
 }
 .hide {
   display: none;

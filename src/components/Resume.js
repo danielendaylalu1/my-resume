@@ -13,7 +13,6 @@ const Resume = ({ showPDF, data }) => {
 
   return (
     <div className={`resume ${isVisible ? "" : "hide"}`}>
-      {/* {console.log(resumeData)} */}
       <div className="preview">
         <div className="close">
           <p
@@ -59,14 +58,14 @@ const Resume = ({ showPDF, data }) => {
               <div className="achievement">
                 <h2>Achievement</h2>
                 <ul>
-                  {/* {resumeData.achievement.map((ach, index) => {
+                  {resumeData.achievement.ach.map((ach, index) => {
                     return (
                       <li key={index}>
-                        <h4>{ach}</h4>
-                        <p>{ach}</p>
+                        <h4>{ach.value}</h4>
+                        <p>{resumeData.achievement.year[index].value}</p>
                       </li>
                     );
-                  })} */}
+                  })}
                 </ul>
               </div>
               <div className="skills">
@@ -87,16 +86,17 @@ const Resume = ({ showPDF, data }) => {
               </div>
               <div className="education">
                 <h2>Education</h2>
-                {/* {resumeData.education.map((edu, index) => {
+                {resumeData.education.edu.map((edu, index) => {
                   return (
                     <div key={index}>
                       <h3>{edu.value}</h3>
                       <p>
-                        <span>2020</span>-<span>2025</span>
+                        <span>{resumeData.education.syear[index].value}</span>-
+                        <span>{resumeData.education.eyear[index].value}</span>
                       </p>
                     </div>
                   );
-                })} */}
+                })}
               </div>
             </div>
           </div>

@@ -43,6 +43,15 @@ function Form({ setShowPDF, setData }) {
                 address: e.target.address.value,
               },
               skills: Array.from(e.target.skill),
+              achievement: {
+                ach: Array.from(e.target.achievement),
+                year: Array.from(e.target.achyear),
+              },
+              education: {
+                edu: Array.from(e.target.education),
+                syear: Array.from(e.target.syear),
+                eyear: Array.from(e.target.eyear),
+              },
             })
           );
 

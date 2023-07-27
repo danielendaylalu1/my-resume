@@ -18,13 +18,13 @@ const Achievement = () => {
       </button>
       <div className="ach-card">
         <input name="achievement" placeholder="achievement" />
-        <input name="ach-year" type="date" />
+        <input name="achyear" type="date" />
       </div>
       {ach.map((a) => {
         return (
           <div className="ach-card" key={a}>
             <input name="achievement" placeholder="achievement" />
-            <input name="ach-year" type="date" />
+            <input name="achyear" type="date" />
           </div>
         );
       })}

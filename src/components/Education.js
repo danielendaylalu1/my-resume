@@ -23,13 +23,13 @@ const Education = () => {
             <label className="label" htmlFor="syear">
               Start year
             </label>
-            <input name="edu-year1" type="date" id="syear" />
+            <input name="syear" type="date" id="syear" />
           </div>
           <div>
             <label className="label" htmlFor="eyear">
               Ending year
             </label>
-            <input name="edu-year2" type="date" id="eyear" />
+            <input name="eyear" type="date" id="eyear" />
           </div>
         </div>
       </div>
@@ -42,13 +42,13 @@ const Education = () => {
                 <label className="label" htmlFor="syear">
                   Start year
                 </label>
-                <input name="edu-year1" type="date" id="syear" />
+                <input name="syear" type="date" id="syear" />
               </div>
               <div>
                 <label className="label" htmlFor="eyear">
                   Ending year
                 </label>
-                <input name="edu-year2" type="date" id="eyear" />
+                <input name="eyear" type="date" id="eyear" />
               </div>
             </div>
           </div>

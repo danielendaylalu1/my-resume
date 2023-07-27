@@ -13,9 +13,9 @@ export const store = configureStore({
         // Ignore these action types
         ignoredActions: ["resume/resumeBuilder"],
         // Ignore these field paths in all actions
-        ignoredActionPaths: ["resume.skills", "Value"],
+        ignoredActionPaths: ["resume", "Value"],
         // Ignore these paths in the state
-        ignoredPaths: [`resume.skills`],
+        ignoredPaths: [`resume`],
       },
     }),
 });
