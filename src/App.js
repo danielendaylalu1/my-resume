@@ -1,5 +1,5 @@
-import Form from "./components/Form";
-import Resume from "./components/Resume";
+import Form from "./components/form/Form";
+import Resume from "./components/resume/Resume";
 import { useState } from "react";
 
 function App() {

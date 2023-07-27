@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Achievement from "./Achievement";
 import Skills from "./Skills";
 import Education from "./Education";
+import Close from "./Close";
 
 const Resume = ({ showPDF, data }) => {
   const resumeData = useSelector((state) => state.resume);
@@ -14,6 +15,7 @@ const Resume = ({ showPDF, data }) => {
   return (
     <div className={`resume ${isVisible ? "" : "hide"}`}>
       <div className="preview">
+        <Close />
         <h1 className="header">
           <span>.R</span>esume
         </h1>

@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import { toogle } from "../store/uiSlice";
-import { resumeBuilder } from "../store/resumeSlice";
+import { toogle } from "../../store/uiSlice";
+import { resumeBuilder } from "../../store/resumeSlice";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
 import Personal from "./Personal";
@@ -30,6 +30,16 @@ function Form({ setShowPDF, setData }) {
               phone: e.target.phone.value,
               email: e.target.email.value,
               address: e.target.address.value,
+            },
+            skills: Array.from(e.target.skill),
+            achievement: {
+              ach: Array.from(e.target.achievement),
+              year: Array.from(e.target.achyear),
+            },
+            education: {
+              edu: Array.from(e.target.education),
+              syear: Array.from(e.target.syear),
+              eyear: Array.from(e.target.eyear),
             },
           });
           dispatch(
