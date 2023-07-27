@@ -1,8 +1,6 @@
 import { Document, Page, Text, StyleSheet, View } from "@react-pdf/renderer";
-// import { useSelector } from "react-redux/es/hooks/useSelector";
 
 function Pdf({ resumeData }) {
-  //   const resumeData = useSelector((state) => state.resume);
   const styles = StyleSheet.create({
     page: {
       backgroundColor: "#E4E4E4",

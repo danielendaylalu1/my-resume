@@ -11,7 +11,6 @@ const Education = () => {
         className="btn"
         onClick={() => {
           setEdu((prve) => [...prve, edu.length * 1 + 1]);
-          // console.log(edu);
         }}
       >
         Add

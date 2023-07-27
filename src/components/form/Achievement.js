@@ -11,7 +11,6 @@ const Achievement = () => {
         className="btn"
         onClick={() => {
           setAch((prve) => [...prve, ach.length * 1 + 1]);
-          // console.log(ach);
         }}
       >
         Add
