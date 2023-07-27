@@ -13,7 +13,7 @@ const Resume = ({ showPDF, data }) => {
 
   return (
     <div className={`resume ${isVisible ? "" : "hide"}`}>
-      {console.log(resumeData)}
+      {/* {console.log(resumeData)} */}
       <div className="preview">
         <div className="close">
           <p
@@ -29,16 +29,18 @@ const Resume = ({ showPDF, data }) => {
           <span>.R</span>esume
         </h1>
         <h1 className="preview-header">Preview resume</h1>
-        {showPDF && (
-          <PDFDownloadLink
-            document={<Pdf resumeData={data} />}
-            fileName="myfile.pdf"
-          >
-            {({ blob, url, loading, error }) =>
-              loading ? "Loading document..." : "Download now!"
-            }
-          </PDFDownloadLink>
-        )}
+        <div className="download">
+          {showPDF && (
+            <PDFDownloadLink
+              document={<Pdf resumeData={data} />}
+              fileName="myfile.pdf"
+            >
+              {({ blob, url, loading, error }) =>
+                loading ? "Loading document..." : "Download now!"
+              }
+            </PDFDownloadLink>
+          )}
+        </div>
         <div className="preview-main">
           <div className="personal">
             <h1 className="name">{resumeData.name}</h1>
@@ -57,29 +59,21 @@ const Resume = ({ showPDF, data }) => {
               <div className="achievement">
                 <h2>Achievement</h2>
                 <ul>
-                  {resumeData.achievement.map((ach, index) => {
+                  {/* {resumeData.achievement.map((ach, index) => {
                     return (
                       <li key={index}>
                         <h4>{ach}</h4>
                         <p>{ach}</p>
                       </li>
                     );
-                  })}
-                  {/* <li>
-                    <h4>web developer at e-talent</h4>
-                    <p>2022</p>
-                  </li>
-                  <li>
-                    <h4>medical doctor at health for all</h4>
-                    <p>2015</p>
-                  </li> */}
+                  })} */}
                 </ul>
               </div>
               <div className="skills">
                 <h2>Skills</h2>
                 <ul>
                   {resumeData.skills.map((skill, index) => {
-                    return <li key={index}>{skill}</li>;
+                    return <li key={index}>{skill.value}</li>;
                   })}
                 </ul>
               </div>
@@ -88,21 +82,21 @@ const Resume = ({ showPDF, data }) => {
             <div className="side2">
               <div className="summery">
                 <h2>Summery</h2>
-                {console.log(resumeData.summery)}
+                {/* {console.log(resumeData.summery)} */}
                 <p>{resumeData.summery}</p>
               </div>
               <div className="education">
                 <h2>Education</h2>
-                {resumeData.education.map((edu, index) => {
+                {/* {resumeData.education.map((edu, index) => {
                   return (
                     <div key={index}>
-                      <h3>Addis ababa science and technology university</h3>
+                      <h3>{edu.value}</h3>
                       <p>
                         <span>2020</span>-<span>2025</span>
                       </p>
                     </div>
                   );
-                })}
+                })} */}
               </div>
             </div>
           </div>

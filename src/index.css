@@ -49,6 +49,27 @@ body {
   border: 1px solid brown;
   border-radius: 5px;
 }
+.edu-card input,
+label {
+  margin: 5px auto !important;
+}
+.year {
+  display: flex;
+  justify-content: center;
+}
+.year input[type="date"] {
+  /* display: block; */
+  width: 20% !important;
+  padding: 5px !important;
+  cursor: pointer;
+}
+.year label {
+  font-size: 0.8rem;
+}
+.form input[type="date"] {
+  display: block;
+  width: 10%;
+}
 .form textarea {
   display: block;
   width: 60%;
@@ -187,4 +208,7 @@ body {
 }
 .hide {
   display: none;
+}
+.download {
+  text-align: center;
 }

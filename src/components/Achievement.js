@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const Achievement = () => {
-  const [ach, setAch] = useState([]);
+  const [ach, setAch] = useState([0]);
   return (
     <div className="card">
       <h2>Achievement</h2>
@@ -11,7 +11,7 @@ const Achievement = () => {
         className="btn"
         onClick={() => {
           setAch((prve) => [...prve, ach.length * 1 + 1]);
-          console.log(ach);
+          // console.log(ach);
         }}
       >
         Add

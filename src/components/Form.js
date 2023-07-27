@@ -11,8 +11,8 @@ import Summery from "./Summery";
 import Education from "./Education";
 
 function Form({ setShowPDF, setData }) {
-  const resumeData = useSelector((state) => state.resume);
   const { isVisible } = useSelector((state) => state.ui);
+
   const dispatch = useDispatch();
   return (
     <div className={`container ${isVisible ? "hide" : ""}`}>
@@ -21,21 +21,7 @@ function Form({ setShowPDF, setData }) {
         className="form"
         onSubmit={(e) => {
           e.preventDefault();
-          // console.log(e.target.includes("skill"));
-          dispatch(
-            resumeBuilder({
-              summery: e.target.summery.value,
-              name: e.target.name.value.toUpperCase(),
-              acadamy: e.target.acadamy.value,
-              contact: {
-                phone: e.target.phone.value,
-                email: e.target.email.value,
-                address: e.target.address.value,
-              },
-            })
-          );
 
-          dispatch(toogle());
           setData({
             summery: e.target.summery.value,
             name: e.target.name.value.toUpperCase(),
@@ -46,8 +32,22 @@ function Form({ setShowPDF, setData }) {
               address: e.target.address.value,
             },
           });
+          dispatch(
+            resumeBuilder({
+              summery: e.target.summery.value,
+              name: e.target.name.value.toUpperCase(),
+              acadamy: e.target.acadamy.value,
+              contact: {
+                phone: e.target.phone.value,
+                email: e.target.email.value,
+                address: e.target.address.value,
+              },
+              skills: Array.from(e.target.skill),
+            })
+          );
+
+          dispatch(toogle());
           setShowPDF(true);
-          console.log(resumeData);
         }}
       >
         <Personal />
