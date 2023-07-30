@@ -8,6 +8,7 @@ const Education = ({ resumeData }) => {
         return (
           <div key={index}>
             <h3>{edu.value}</h3>
+            <h4>{resumeData.education.major[index].value}</h4>
             <p>
               <span>{resumeData.education.syear[index].value}</span>-
               <span>{resumeData.education.eyear[index].value}</span>

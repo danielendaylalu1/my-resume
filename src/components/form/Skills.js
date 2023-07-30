@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Skills = () => {
-  const [skill, setSkill] = useState([0]);
+  const [skill, setSkill] = useState([0, 1]);
   return (
     <div className="card">
       <h2>Skills</h2>
@@ -10,14 +10,11 @@ const Skills = () => {
         className="btn"
         onClick={() => {
           setSkill((prve) => [...prve, skill.length * 1 + 1]);
-          // console.log(skill);
         }}
       >
         Add
       </button>
-      <div className="ach-card">
-        <input name="skill" placeholder="skill" />
-      </div>
+
       {skill.map((a, index) => {
         return (
           <div className="ach-card" key={index}>

@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   name: "",
-  acadamy: "",
+  profession: "",
   contact: {
     phone: "",
     email: "",
@@ -16,6 +16,7 @@ const initialState = {
   summery: "",
   education: {
     edu: [],
+    major: [],
     syear: [],
     eyear: [],
   },
@@ -27,7 +28,7 @@ const resumeSlice = createSlice({
   reducers: {
     resumeBuilder: (state, action) => {
       state.name = action.payload.name;
-      state.acadamy = action.payload.acadamy;
+      state.profession = action.payload.profession;
       state.contact = action.payload.contact;
       state.summery = action.payload.summery;
       state.skills = action.payload.skills;

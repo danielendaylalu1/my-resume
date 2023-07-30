@@ -25,7 +25,7 @@ function Form({ setShowPDF, setData }) {
           setData({
             summery: e.target.summery.value,
             name: e.target.name.value.toUpperCase(),
-            acadamy: e.target.acadamy.value,
+            profession: e.target.profession.value,
             contact: {
               phone: e.target.phone.value,
               email: e.target.email.value,
@@ -38,6 +38,7 @@ function Form({ setShowPDF, setData }) {
             },
             education: {
               edu: Array.from(e.target.education),
+              major: Array.from(e.target.major),
               syear: Array.from(e.target.syear),
               eyear: Array.from(e.target.eyear),
             },
@@ -46,7 +47,7 @@ function Form({ setShowPDF, setData }) {
             resumeBuilder({
               summery: e.target.summery.value,
               name: e.target.name.value.toUpperCase(),
-              acadamy: e.target.acadamy.value,
+              profession: e.target.profession.value,
               contact: {
                 phone: e.target.phone.value,
                 email: e.target.email.value,
@@ -59,6 +60,7 @@ function Form({ setShowPDF, setData }) {
               },
               education: {
                 edu: Array.from(e.target.education),
+                major: Array.from(e.target.major),
                 syear: Array.from(e.target.syear),
                 eyear: Array.from(e.target.eyear),
               },

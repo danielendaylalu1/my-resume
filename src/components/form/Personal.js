@@ -8,14 +8,14 @@ const Personal = () => {
         Full Name
       </label>
       <input placeholder="full name" id="name" className="input" name="name" />
-      <label className="label" htmlFor="school">
-        School
+      <label className="label" htmlFor="profession">
+        profession
       </label>
       <input
-        placeholder="School.."
-        id="school"
+        placeholder="profession.."
+        id="profession"
         className="input"
-        name="acadamy"
+        name="profession"
       />
     </div>
   );

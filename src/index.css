@@ -211,6 +211,10 @@ label {
 .education {
   margin-top: 40px;
 }
+.education h4 {
+  margin-top: 10px;
+  color: rgb(20, 20, 20);
+}
 .education span {
   margin: 1px 10px;
   font-size: 0.8rem;

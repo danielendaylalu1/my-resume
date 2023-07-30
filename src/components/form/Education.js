@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const Education = () => {
-  const [edu, setEdu] = useState([0]);
+  const [edu, setEdu] = useState([0, 1]);
   return (
     <div className="card">
       <h2>Education</h2>
@@ -15,27 +15,11 @@ const Education = () => {
       >
         Add
       </button>
-      <div className="edu-card">
-        <input name="education" placeholder="Education" />
-        <div className="year">
-          <div>
-            <label className="label" htmlFor="syear">
-              Start year
-            </label>
-            <input name="syear" type="date" id="syear" />
-          </div>
-          <div>
-            <label className="label" htmlFor="eyear">
-              Ending year
-            </label>
-            <input name="eyear" type="date" id="eyear" />
-          </div>
-        </div>
-      </div>
       {edu.map((e) => {
         return (
           <div className="edu-card" key={e}>
-            <input name="education" placeholder="Education" />
+            <input name="education" placeholder="School center" />
+            <input name="major" placeholder="major" />
             <div className="year">
               <div>
                 <label className="label" htmlFor="syear">
